@@ -1,5 +1,13 @@
 import React from 'react'
+import RepoList from './components/RepoList'
 
-const App = () => <h1>Hello!</h1>
+const App = () => {
+  return (
+    <section>
+      <h1>duet</h1>
+      <RepoList />
+    </section>
+  )
+}
 
 export default App
