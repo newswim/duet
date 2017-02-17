@@ -20,11 +20,11 @@ class RepoList extends Component {
 
   render () {
     return (
-      <ul>
+      <div>
         {this.state.repos.map((repo, i) => {
           return <Repo key={i} repo={repo} issues={this.state.issues[i]} />
         })}
-      </ul>
+      </div>
     )
   }
 }
