@@ -20,4 +20,9 @@ export const HeaderImage = styled.img`
   max-width: 100%;
   max-height: 120px;
   margin-left: 2rem;
+
+  @media (max-width: 420px) {
+    max-height: 30px;
+    max-width: 30px;
+  }
 `
