@@ -12,10 +12,9 @@ class RepoList extends Component {
   componentWillMount () {
     const gh = new GitHub()
     this.setState({
-      repos: repos.map(repo => gh.getRepo(...repo.split('/'))),
-      issues: repos.map(repo => gh.getIssues(...repo.split('/')))
+      repos: repos.map(repo => gh.getRepo(...repo.path.split('/'))),
+      issues: repos.map(repo => gh.getIssues(...repo.path.split('/')))
     })
-    console.log(this.state.repos)
   }
 
   render () {
