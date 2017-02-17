@@ -10,7 +10,12 @@ class RepoList extends Component {
 
   componentWillMount () {
     const gh = new GitHub()
-    const repos = ['jekyll/jekyll']
+    const repos = [
+      'jekyll/jekyll',
+      'jekyll/plugins',
+      'jekyll/jekyll-admin',
+      'jekyll/minima'
+    ]
     this.setState({
       repos: repos.map(repo => gh.getRepo(...repo.split('/'))),
       issues: repos.map(repo => gh.getIssues(...repo.split('/')))
