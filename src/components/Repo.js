@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Gx from 'gx'
+import { Heading, Small } from '../styles'
 import Issue from './Issue'
 
 class Repo extends Component {
@@ -26,8 +27,10 @@ class Repo extends Component {
   render () {
     return (
       <Gx col={6}>
-        <h2>{this.state.details.name}</h2>
-        <p>stars: {this.state.details.stargazers_count}</p>
+        <Heading>
+          {this.state.details.name}
+          <Small>&#9733; {this.state.details.stargazers_count}</Small>
+        </Heading>
         {this.state.issues.length === 0 ? <p>No issues currently!</p> : null}
         {this.state.issues.map((issue, i) => {
           return <Issue key={i} {...issue} />
