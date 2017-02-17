@@ -1,7 +1,16 @@
 import React, { Component } from 'react'
 import Gx from 'gx'
-import { MediumHeading, Small, Link } from '../styles'
+import {
+  MediumHeading,
+  Small,
+  Link,
+  Subtext
+} from '../styles'
 import Issue from './Issue'
+
+const NoIssuesPlaceholder = () => {
+  return <i>Currently there are no open issues, check back later!</i>
+}
 
 class Repo extends Component {
   constructor (props) {
@@ -33,7 +42,9 @@ class Repo extends Component {
           </MediumHeading>
         </Link>
         <Small>&#9733; {this.state.details.stargazers_count}</Small>
-        {this.state.issues.length === 0 ? <p>No issues currently!</p> : null}
+        <Subtext>{this.props.description}</Subtext>
+        <br />
+        {this.state.issues.length === 0 ? <NoIssuesPlaceholder /> : null}
         {this.state.issues.map((issue, i) => {
           return <Issue key={i} {...issue} />
         })}

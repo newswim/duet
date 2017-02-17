@@ -15,7 +15,13 @@ export const Link = styled.a`
 `
 
 export const BorderLink = styled(Link)`
-  border-left: 4px solid cornflowerblue;
-  padding: 5px 0;
+  border-left: 5px solid cornflowerblue;
+  padding: 10px 0;
   padding-left: 10px;
+  width: 100%;
+  display: block;
+
+  &:hover {
+    background: whitesmoke;
+  }
 `

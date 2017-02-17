@@ -8,6 +8,12 @@ export const BigHeading = styled.h1`
 export const MediumHeading = styled.h2`
   font-size: 20px;
   display: inline-block;
+  margin-bottom: 0;
+`
+
+export const Subtext = styled.p`
+  font-size: 18px;
+  margin: 5px 0;
 `
 
 export const Small = styled.span`

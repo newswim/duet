@@ -22,7 +22,12 @@ class RepoList extends Component {
       <div>
         {this.state.repos.map((repo, i) => {
           return (
-            <Repo key={i} repo={repo} issues={this.state.issues[i]} />
+            <Repo
+              key={i}
+              repo={repo}
+              issues={this.state.issues[i]}
+              description={repos[i].description}
+            />
           )
         })}
       </div>
