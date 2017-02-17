@@ -3,13 +3,15 @@ import {
   Container,
   HeaderContainer,
   BigHeading,
-  HeaderDescription
+  HeaderDescription,
+  HeaderImage
 } from '../styles'
 
 const Header = () => {
   return (
     <HeaderContainer>
       <Container>
+        <HeaderImage src='/static/img/logo-notext.png' width={120} height={120} />
         <BigHeading>Welcome to duet!</BigHeading>
         <HeaderDescription>
           duet is a tool that helps newcomers to open-source find

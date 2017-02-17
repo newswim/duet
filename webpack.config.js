@@ -43,7 +43,7 @@ module.exports = (env = 'development') => {
     devtool: isProduction ? 'hidden-source-map' : 'eval-source-map',
     entry,
     output: {
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, 'public'),
       filename: 'bundle.js'
     },
     module: {
@@ -62,7 +62,8 @@ module.exports = (env = 'development') => {
     },
     plugins,
     devServer: {
-      contentBase: './src',
+      contentBase: './public',
+      publicPath: '/',
       historyApiFallback: true,
       port: 4001,
       inline: true,

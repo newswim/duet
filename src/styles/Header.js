@@ -14,3 +14,10 @@ export const HeaderDescription = styled.p`
     width: 100%;
   }
 `
+
+export const HeaderImage = styled.img`
+  float: right;
+  max-width: 100%;
+  max-height: 120px;
+  margin-left: 2rem;
+`
