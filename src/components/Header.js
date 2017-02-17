@@ -1,9 +1,17 @@
 import React from 'react'
-import { BigHeading } from '../styles'
+import { Container, HeaderContainer, BigHeading } from '../styles'
 
 const Header = () => {
   return (
-    <BigHeading>duet</BigHeading>
+    <HeaderContainer>
+      <Container>
+        <BigHeading>Welcome to duet!</BigHeading>
+        <p>
+          duet is a tool that helps newcomers to open-source find
+          their first contribution to Jekyll.
+        </p>
+      </Container>
+    </HeaderContainer>
   )
 }
 

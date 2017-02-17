@@ -5,10 +5,12 @@ import Header from './components/Header'
 
 const App = () => {
   return (
-    <Container>
+    <main>
       <Header />
-      <RepoList />
-    </Container>
+      <Container>
+        <RepoList />
+      </Container>
+    </main>
   )
 }
 
