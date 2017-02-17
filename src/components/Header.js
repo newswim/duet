@@ -4,7 +4,8 @@ import {
   HeaderContainer,
   BigHeading,
   HeaderDescription,
-  HeaderImage
+  HeaderImage,
+  Link
 } from '../styles'
 
 const Header = () => {
@@ -14,9 +15,11 @@ const Header = () => {
         <HeaderImage src='/static/img/logo-notext.png' width={120} height={120} />
         <BigHeading>Welcome to duet!</BigHeading>
         <HeaderDescription>
-          duet is a tool that helps newcomers to open-source find
-          their first contribution to Jekyll, and to help maintainers
-          keep an overview.
+          duet is a tool that helps newcomers to open-source find their
+          <Link href='https://github.com/jekyll/community/blob/master/policies/first_timers_only.md'>
+            &nbsp;first contribution to Jekyll
+          </Link>,
+          and to help maintainers keep an overview.
         </HeaderDescription>
       </Container>
     </HeaderContainer>
