@@ -1,8 +1,13 @@
 import styled from 'styled-components'
 
-export const Heading = styled.h1`
-  font-size: ${props => props.big ? '25px' : '20px'};
+export const BigHeading = styled.h1`
+  font-size: 25px;
   margin-bottom: 30px;
+`
+
+export const MediumHeading = styled.h2`
+  font-size: 20px;
+  display: inline-block;
 `
 
 export const Small = styled.span`

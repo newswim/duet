@@ -1,14 +1,14 @@
 import React from 'react'
 import RepoList from './components/RepoList'
-import { Heading, Small, Container } from './styles'
+import { BigHeading, Small, Container } from './styles'
 
 const App = () => {
   return (
     <Container>
-      <Heading big>
+      <BigHeading>
         duet
         <Small>accessible issue browser for jekyll</Small>
-      </Heading>
+      </BigHeading>
       <RepoList />
     </Container>
   )

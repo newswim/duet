@@ -7,6 +7,7 @@ export const Container = styled.div`
 
 export const Link = styled.a`
   text-decoration: none;
+  color: darkslateblue;
 `
 
 export const BorderLink = styled(Link)`
