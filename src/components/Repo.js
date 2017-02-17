@@ -25,7 +25,6 @@ class Repo extends Component {
   render () {
     return (
       <li>
-
         <h2>{this.state.details.name}</h2>
         <p>stars: {this.state.details.stargazers_count}</p>
         {this.state.issues.length === 0 ? <p>No issues currently!</p> : null}
