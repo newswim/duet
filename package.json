@@ -36,9 +36,11 @@
   },
   "dependencies": {
     "github-api": "^3.0.0",
+    "gx": "^1.0.0-rc3",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-hot-loader": "3.0.0-beta2"
+    "react-hot-loader": "3.0.0-beta2",
+    "styled-components": "^1.4.3"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
