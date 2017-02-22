@@ -10,7 +10,7 @@
     "build": "webpack --env=production --progress",
     "lint": "standard | snazzy",
     "jest": "jest",
-    "jest:ci": "jest --runInBand | codecov",
+    "jest:ci": "jest --runInBand && codecov",
     "opencov": "opn coverage/index.html"
   },
   "babel": {
