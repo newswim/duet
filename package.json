@@ -9,7 +9,7 @@
     "test": "npm run lint && npm run jest",
     "build": "webpack --env=production --progress",
     "lint": "standard | snazzy",
-    "jest": "jest --coverage",
+    "jest": "jest",
     "opencov": "opn coverage/index.html"
   },
   "babel": {
@@ -41,7 +41,8 @@
     "coverageDirectory": "coverage",
     "coverageReporters": [
       "html"
-    ]
+    ],
+    "collectCoverage": true
   },
   "dependencies": {
     "github-api": "^3.0.0",
