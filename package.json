@@ -44,6 +44,9 @@
     ],
     "collectCoverage": true
   },
+  "standard": {
+    "globals": ["expect", "test", "describe"]
+  },
   "dependencies": {
     "github-api": "^3.0.0",
     "gx": "^1.0.0-rc3",
