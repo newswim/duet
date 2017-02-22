@@ -41,7 +41,8 @@
     "setupTestFrameworkScriptFile": "<rootDir>/test/setup.js",
     "coverageDirectory": "coverage",
     "coverageReporters": [
-      "html"
+      "html",
+      "lcov"
     ],
     "collectCoverage": true
   },
