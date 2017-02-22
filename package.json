@@ -6,10 +6,11 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --env=development --progress",
-    "test": "npm run lint && npm run jest",
+    "test": "npm run lint && npm run jest:ci",
     "build": "webpack --env=production --progress",
     "lint": "standard | snazzy",
     "jest": "jest",
+    "jest:ci": "jest --runInBand | codecov",
     "opencov": "opn coverage/index.html"
   },
   "babel": {
@@ -45,7 +46,11 @@
     "collectCoverage": true
   },
   "standard": {
-    "globals": ["expect", "test", "describe"]
+    "globals": [
+      "expect",
+      "test",
+      "describe"
+    ]
   },
   "dependencies": {
     "github-api": "^3.0.0",
@@ -63,6 +68,7 @@
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-2": "^6.22.0",
+    "codecov": "^1.0.1",
     "enzyme": "^2.7.1",
     "html-webpack-plugin": "^2.28.0",
     "jest": "^19.0.0",
