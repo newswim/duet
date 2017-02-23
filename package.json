@@ -10,7 +10,8 @@
     "build": "webpack --env=production --progress",
     "lint": "standard | snazzy",
     "jest": "jest",
-    "jest:ci": "jest --runInBand && codecov",
+    "jest:watch": "jest --watch",
+    "jest:ci": "jest --runInBand --coverage && codecov",
     "opencov": "opn coverage/index.html"
   },
   "babel": {
@@ -43,8 +44,7 @@
     "coverageReporters": [
       "html",
       "lcov"
-    ],
-    "collectCoverage": true
+    ]
   },
   "standard": {
     "globals": [
