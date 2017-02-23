@@ -39,7 +39,6 @@
     }
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "<rootDir>/test/setup.js",
     "coverageDirectory": "coverage",
     "coverageReporters": [
       "html",
