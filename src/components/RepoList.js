@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import GitHub from 'github-api'
 import Repo from './Repo'
-import repos from '../../repos.json'
 
 class RepoList extends Component {
   constructor (props) {
@@ -12,8 +11,8 @@ class RepoList extends Component {
   componentWillMount () {
     const gh = new GitHub()
     this.setState({
-      repos: repos.map(repo => gh.getRepo(...repo.path.split('/'))),
-      issues: repos.map(repo => gh.getIssues(...repo.path.split('/')))
+      repos: this.props.repos.map(repo => gh.getRepo(...repo.path.split('/'))),
+      issues: this.props.repos.map(repo => gh.getIssues(...repo.path.split('/')))
     })
   }
 
@@ -26,7 +25,7 @@ class RepoList extends Component {
               key={i}
               repo={repo}
               issues={this.state.issues[i]}
-              description={repos[i].description}
+              description={this.props.repos[i].description}
             />
           )
         })}
