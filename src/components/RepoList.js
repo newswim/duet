@@ -17,6 +17,8 @@ class RepoList extends Component {
   }
 
   render () {
+    const columnWidth = this.props.repos.length === 1 ? 12 : 6
+
     return (
       <div>
         {this.state.repos.map((repo, i) => {
@@ -26,6 +28,7 @@ class RepoList extends Component {
               repo={repo}
               issues={this.state.issues[i]}
               description={this.props.repos[i].description}
+              columnWidth={columnWidth}
             />
           )
         })}

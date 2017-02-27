@@ -35,7 +35,7 @@ class Repo extends Component {
 
   render () {
     return (
-      <Gx col={6}>
+      <Gx col={this.props.columnWidth}>
         <Link href={this.state.details.html_url}>
           <MediumHeading>
             {this.state.details.name}
