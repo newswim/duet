@@ -1,6 +1,9 @@
 {
   "title": "Welcome to Duet!",
   "description": "duet is a tool that helps newcomers to open-source find their first contribution to Jekyll, and to help maintainers keep an overview.",
+  "labels": [
+    "first-timers-only"
+  ],
   "repos": [
     {
       "path": "jekyll/jekyll",

@@ -24,7 +24,7 @@ class Repo extends Component {
   componentWillMount () {
     Promise.all([
       this.props.repo.getDetails(),
-      this.props.issues.listIssues({ labels: 'first-timers-only' })
+      this.props.issues.listIssues({ labels: this.props.labels.join(',') })
     ]).then(values => {
       this.setState({
         details: values[0].data,

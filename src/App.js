@@ -9,7 +9,7 @@ const App = () => {
     <main>
       <Header title={config.title} description={config.description} />
       <Container>
-        <RepoList repos={config.repos} />
+        <RepoList repos={config.repos} labels={config.labels} />
       </Container>
     </main>
   )

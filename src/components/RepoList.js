@@ -29,6 +29,7 @@ class RepoList extends Component {
               issues={this.state.issues[i]}
               description={this.props.repos[i].description}
               columnWidth={columnWidth}
+              labels={this.props.labels}
             />
           )
         })}
