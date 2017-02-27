@@ -5,12 +5,12 @@ import renderer from 'react-test-renderer'
 
 const repos = [
   {
-    "path": "github/hub",
-    "description": "aaaa"
+    'path': 'github/hub',
+    'description': 'aaaa'
   },
   {
-    "path": "github/linguist",
-    "description": "cool"
+    'path': 'github/linguist',
+    'description': 'cool'
   }
 ]
 
@@ -23,8 +23,8 @@ test('it renders the component tree', () => {
 
 test('it renders the correct amount of repos', () => {
   const repos1 = repos.concat({
-    "path": "github/dmca",
-    "description": "bbbb"
+    'path': 'github/dmca',
+    'description': 'bbbb'
   })
   const wrapper1 = shallow(<RepoList repos={repos1} />)
   expect(wrapper1.find('Repo').length).toBe(3)
