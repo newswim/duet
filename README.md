@@ -1,6 +1,6 @@
 # ![duet](http://i.imgsafe.org/49dc89c263.png)
 
-[![Build Status](https://travis-ci.org/pnn/duet.svg?branch=master)](https://travis-ci.org/pnn/duet) [![codecov](https://codecov.io/gh/pnn/duet/branch/master/graph/badge.svg)](https://codecov.io/gh/pnn/duet)
+[![Greenkeeper badge](https://badges.greenkeeper.io/pnn/duet.svg)](https://greenkeeper.io/) [![Build Status](https://travis-ci.org/pnn/duet.svg?branch=master)](https://travis-ci.org/pnn/duet) [![codecov](https://codecov.io/gh/pnn/duet/branch/master/graph/badge.svg)](https://codecov.io/gh/pnn/duet)
 
 Duet is a tool to discover issues meant for newcomers to your project,
 or to open-source in general. It compiles to static HTML, so you can host it
