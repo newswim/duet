@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders the header structure 1`] = `
+<div
+  className="bkMRIm"
+>
+  <div
+    className="erWBAn"
+  >
+    <img
+      className="gfQWxQ"
+      height={120}
+      src="/static/img/logo-notext.png"
+      width={120}
+    />
+    <h1
+      className="Jpfkj"
+    >
+      Welcome to duet!
+    </h1>
+    <p
+      className="dlsGdS"
+    >
+      duet is a tool that helps newcomers to open-source find their
+      <a
+        className="jnqCsK"
+        href="https://github.com/jekyll/community/blob/master/policies/first_timers_only.md"
+      >
+         first contribution to Jekyll
+      </a>
+      , and to help maintainers keep an overview.
+    </p>
+  </div>
+</div>
+`;

@@ -14,5 +14,9 @@
   {
     "path": "jekyll/jekyll-admin",
     "description": "Flexible admin interface for Jekyll."
+  },
+  {
+    "path": "pnn/duet",
+    "description": "this lol"
   }
 ]

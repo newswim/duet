@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders the component tree 1`] = `
+<div>
+  <div
+    className="Gx"
+    style={
+      Object {
+        "boxSizing": "border-box",
+        "display": "inline-block",
+        "maxWidth": "100%",
+        "minWidth": "50%",
+        "verticalAlign": "top",
+        "width": "calc(262144px - 51200%)",
+      }
+    }
+  >
+    <a
+      className="jnqCsK"
+      href={undefined}
+    >
+      <h2
+        className="jWDnSI"
+      />
+    </a>
+    <span
+      className="eUzqvD"
+    >
+      ★ 
+    </span>
+    <p
+      className="knmMnU"
+    >
+      aaaa
+    </p>
+    <br />
+    <i>
+      Currently there are no open issues, check back later!
+    </i>
+  </div>
+  <div
+    className="Gx"
+    style={
+      Object {
+        "boxSizing": "border-box",
+        "display": "inline-block",
+        "maxWidth": "100%",
+        "minWidth": "50%",
+        "verticalAlign": "top",
+        "width": "calc(262144px - 51200%)",
+      }
+    }
+  >
+    <a
+      className="jnqCsK"
+      href={undefined}
+    >
+      <h2
+        className="jWDnSI"
+      />
+    </a>
+    <span
+      className="eUzqvD"
+    >
+      ★ 
+    </span>
+    <p
+      className="knmMnU"
+    >
+      cool
+    </p>
+    <br />
+    <i>
+      Currently there are no open issues, check back later!
+    </i>
+  </div>
+</div>
+`;
