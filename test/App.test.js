@@ -4,10 +4,10 @@ import App from '../src/App'
 import Header from '../src/components/Header'
 import RepoList from '../src/components/RepoList'
 import { Container } from '../src/styles'
-import repos from '../repos.json'
+import config from '../config.json'
 
 test('App renders its hierarchy', () => {
   const wrapper = shallow(<App />)
-  expect(wrapper.contains(<Header />)).toBe(true)
-  expect(wrapper.contains(<Container><RepoList repos={repos} /></Container>)).toBe(true)
+  expect(wrapper.contains(<Header title={config.title} description={config.description} />)).toBe(true)
+  expect(wrapper.contains(<Container><RepoList repos={config.repos} /></Container>)).toBe(true)
 })
