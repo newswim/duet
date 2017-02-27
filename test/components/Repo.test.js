@@ -18,6 +18,9 @@ const issues = {
     }
   ]
 }
+const labels = [
+  'test-123'
+]
 
 beforeEach(() => {
   repoStub = {
@@ -29,7 +32,7 @@ beforeEach(() => {
 })
 
 test('it gets the data from the "api"', () => {
-  const wrapper = mount(<Repo repo={repoStub} issues={issuesStub} />)
+  const wrapper = mount(<Repo repo={repoStub} issues={issuesStub} labels={labels} />)
 
   expect(repoStub.getDetails.called).toBe(true)
   expect(issuesStub.listIssues.called).toBe(true)
@@ -41,7 +44,7 @@ test('it gets the data from the "api"', () => {
 })
 
 test('it renders the correct amount of issues', () => {
-  const wrapper = mount(<Repo repo={repoStub} issues={issuesStub} />)
+  const wrapper = mount(<Repo repo={repoStub} issues={issuesStub} labels={labels} />)
 
   setImmediate(() => {
     expect(wrapper.find('Issue').getNodes().length).toBe(1)
@@ -51,7 +54,7 @@ test('it renders the correct amount of issues', () => {
 test('it renders a placeholder when there are no issues', () => {
   issuesStub.listIssues.returns(Promise.resolve({}))
 
-  const wrapper = mount(<Repo repo={repoStub} issues={issuesStub} />)
+  const wrapper = mount(<Repo repo={repoStub} issues={issuesStub} labels={labels} />)
 
   setImmediate(() => {
     expect(wrapper.find('NoIssuesPlaceholder').getNodes().length).toBe(1)
