@@ -2,14 +2,14 @@ import React from 'react'
 import RepoList from './components/RepoList'
 import { Container } from './styles'
 import Header from './components/Header'
-import repos from '../repos.json'
+import config from '../config.json'
 
 const App = () => {
   return (
     <main>
-      <Header />
+      <Header title={config.title} description={config.description} />
       <Container>
-        <RepoList repos={repos} />
+        <RepoList repos={config.repos} />
       </Container>
     </main>
   )

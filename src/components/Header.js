@@ -8,18 +8,14 @@ import {
   Link
 } from '../styles'
 
-const Header = () => {
+const Header = props => {
   return (
     <HeaderContainer>
       <Container>
         <HeaderImage src='/static/img/logo-notext.png' width={120} height={120} />
-        <BigHeading>Welcome to duet!</BigHeading>
+        <BigHeading>{props.title}</BigHeading>
         <HeaderDescription>
-          duet is a tool that helps newcomers to open-source find their
-          <Link href='https://github.com/jekyll/community/blob/master/policies/first_timers_only.md'>
-            &nbsp;first contribution to Jekyll
-          </Link>,
-          and to help maintainers keep an overview.
+          {props.description}
         </HeaderDescription>
       </Container>
     </HeaderContainer>
