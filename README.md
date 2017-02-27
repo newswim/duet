@@ -6,6 +6,10 @@ Duet is a tool to discover issues meant for newcomers to your project,
 or to open-source in general. It compiles to static HTML, so you can host it
 anywhere.
 
+Duet was designed for use in the [Jekyll](http://jekyllrb.com) community, so
+some things may be geared to that. I am working on making it more generally
+usable though.
+
 ## Installation
 
 You will need Node.js LTS 6 or newer.
