@@ -4,8 +4,7 @@ import {
   HeaderContainer,
   BigHeading,
   HeaderDescription,
-  HeaderImage,
-  Link
+  HeaderImage
 } from '../styles'
 
 const Header = props => {
